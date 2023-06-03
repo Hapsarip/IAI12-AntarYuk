@@ -1,5 +1,6 @@
 export default function UserProfil () 
 {
+    return (
     <form>
         <div class="bg-white overflow-hidden shadow rounded-lg border">
             <div class="px-4 py-5 sm:px-6">
@@ -49,4 +50,5 @@ export default function UserProfil ()
             </div>
         </div>
     </form>
+    )
 }

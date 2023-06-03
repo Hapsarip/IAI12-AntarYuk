@@ -11,7 +11,7 @@ export default function Nav() {
   useEffect(() => {  
     (async () => {
       try {
-        setLinkto('/Profile')
+        setLinkto('/Profil')
         setLinkor('/MakeOrder')
         setLinkhi ('/History')
       } catch(err) {
