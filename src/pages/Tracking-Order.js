@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function History () {
+export default function Tracking () {
     return (
         <div>
-            History
+            Tracking
         </div>
     )
 }
