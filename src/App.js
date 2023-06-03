@@ -1,6 +1,6 @@
 import './App.css';
 import { 
-  HashRouter as Router,  
+  BrowserRouter as Router,  
   Route, 
   Routes
 } from 'react-router-dom'
@@ -11,23 +11,21 @@ import RegisterPage from './pages/Register';
 import MakeOrder from './pages/Make-Order';
 import History from './pages/History-Order';
 import Tracking from './pages/Tracking-Order';
+import UserProfil from './pages/User-Profil'; 
 
-function App() {
+export default function App() {
   return (
-    <div >
-      <Router>
-        <Nav/>
-        <Routes>
-          <Route path='/' element={<Dashboard/>} />
-          <Route path='/Login' element={<LoginPage/>} />
-          <Route path='/Register'element={<RegisterPage/>} />
-          <Route path='/MakeOrder' element={<MakeOrder/>} />
-          <Route path='/History' element={<History/>} />
-          <Route path='/Track' element={<Tracking/>} />
-        </Routes>
-      </Router>
-    </div>
-  );
+    <Router>
+      <Nav/>
+      <Routes>
+        <Route exact path='/' element={<Dashboard/>} />
+        <Route exact path='/Login' element={<LoginPage/>} />
+        <Route exact path='/Register'element={<RegisterPage/>} />
+        <Route exact path='/MakeOrder' element={<MakeOrder/>} />
+        <Route exact path='/History' element={<History/>} />
+        <Route exact path='/Track' element={<Tracking/>} />
+        <Route exact path='/Profile' element={<UserProfil/>} />
+      </Routes>
+    </Router>
+  )
 }
-
-export default App;
