@@ -11,7 +11,7 @@ import RegisterPage from './pages/Register';
 import MakeOrder from './pages/Make-Order';
 import History from './pages/History-Order';
 import Tracking from './pages/Tracking-Order';
-import UserProfil from './pages/User-Profil'; 
+import UserProfil from './pages/User-Profil';
 
 export default function App() {
   return (
@@ -24,7 +24,7 @@ export default function App() {
         <Route exact path='/MakeOrder' element={<MakeOrder/>} />
         <Route exact path='/History' element={<History/>} />
         <Route exact path='/Track' element={<Tracking/>} />
-        <Route exact path='/Profile' element={<UserProfil/>} />
+        <Route exact path='/Profil' element={<UserProfil/>} />
       </Routes>
     </Router>
   )

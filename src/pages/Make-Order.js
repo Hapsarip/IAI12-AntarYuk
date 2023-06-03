@@ -88,6 +88,9 @@ export default function MakeOrder () {
                         Pilih jenis pengiriman di sini
                     </button>
                 </div>
+                <button className="place-items-end bg-red-600 w-[200px] px-3 py-2 rounded-full font-muli text-lg text-white hover:bg-red-400">
+                    Order
+                </button>
             </div>
         </div>
     )

@@ -2,9 +2,13 @@ import React from 'react';
 
 export default function RegisterPage () {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <form className="w-full max-w-sm">
-        <div className="mb-4">
+    <div className="bg-gradient-to-br from-white via-slate-200 to-blue-800 flex justify-center items-center h-screen">
+      <form class="relative  mx-auto w-[700px] max-w-md bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:rounded-xl sm:px-10 ">
+        <div class="text-center">
+          <h1 class="text-3xl font-semibold text-gray-900">Register</h1>
+          <p class="mt-2 text-gray-500">Create your account</p>
+        </div>
+        <div className="mb-4 mt-10">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
             Full Name
           </label>
@@ -60,6 +64,12 @@ export default function RegisterPage () {
             Register
           </button>
         </div>
+        <p class="text-center text-sm text-gray-500"> Already have an account? 
+              <a href="/Login"
+                class="font-semibold text-gray-600 hover:underline focus:text-gray-800 focus:outline-none">
+                   Login
+              </a>
+            </p>
       </form>
     </div>
   )

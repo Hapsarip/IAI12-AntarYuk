@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'dashboard' : 'url(../src/img/bg-dashboard.png)'
+        'dashboard' : 'url(../src/img/bg-dashboard.png)',
+        'logreg' : 'url(../src/img/bground.png)'
       }
     },
   },
