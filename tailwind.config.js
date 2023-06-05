@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       backgroundImage:{
         'dashboard' : 'url(../src/img/bg-dashboard.png)',
-        'logreg' : 'url(../src/img/bground.png)'
+        'logreg' : 'url(../src/img/bground.png)',
+        'maps' : 'url(../src/img/maps.png)'
       }
     },
   },
