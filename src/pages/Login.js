@@ -1,7 +1,12 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
-export default function LoginPage ()
-{
+export default function LoginPage () {
+  const navigate = useNavigate();
+  const navigateToHome = () => {
+    navigate('/');
+  };
+
   return (
     <div className='bg-gradient-to-br from-white via-slate-200 to-blue-800 flex w-full h-screen items-center justify-center'>
       <form>
@@ -23,7 +28,12 @@ export default function LoginPage ()
                   <input type="password" id="password" name="password" class="w-full py-2 px-3 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:border-blue-500" placeholder="Enter your password"/>
                 </div>
                 <div class="mt-8 flex justify-center text-lg text-black">
-                  <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800 transition duration-150 ease-in-out">Login</button>
+                  <button
+                    type="submit"
+                    class="bg-blue-500 text-white py-2 px-4 rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800 transition duration-150 ease-in-out"
+                    onClick={navigateToHome}>
+                      Login
+                  </button>
                 </div>
               </form>
             </div>
