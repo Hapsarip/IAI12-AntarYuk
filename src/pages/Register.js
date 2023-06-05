@@ -1,6 +1,12 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 export default function RegisterPage () {
+  const navigate = useNavigate();
+  const navigateToLogin = () => {
+    navigate('/Login');
+  };
+
   return (
     <div className="bg-gradient-to-br from-white via-slate-200 to-blue-800 flex justify-center items-center h-screen">
       <form class="relative  mx-auto w-[700px] max-w-md bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:rounded-xl sm:px-10 ">
@@ -60,7 +66,7 @@ export default function RegisterPage () {
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
-          >
+            onClick={navigateToLogin}>
             Register
           </button>
         </div>
