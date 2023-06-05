@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import {React} from "react";
 import { useNavigate } from "react-router-dom";
 import Food1 from '../img/food1.png'
 import Food2 from '../img/food2.png'
